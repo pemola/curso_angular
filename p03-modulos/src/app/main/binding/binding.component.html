@@ -1,0 +1,20 @@
+<div class="card col-6">
+  <div class="card-header">
+    Binding
+  </div>
+  <div class="card-body">
+    <!--<p class="card-text">Text</p>-->
+    <div class="form-group">
+      <label for="nombre">Dime tu nombre</label>
+      <!--le pasamos la propiedad sName al value del input [value]="sName"-->
+      <!--doble binding con [(ngModel)]="sName"-->
+      <input type="text" [(ngModel)] ="sName"
+        class="form-control" name="nombre" id="nombre"  placeholder="Dime tu nombre">
+    </div>
+    <!--boton con evento gestionado en angular (click) = "btnborrar($event)", se le pasa el $event-->
+    <button id = "botonBorrar" class="btn btn-primary" (click) = "btnBorrar($event)" >Borrar</button>
+  </div>
+  <div class="card-footer text-muted">
+    Hola {{sName || "amigo"}} <!--Si sName no tiene valor pone amigo-->
+  </div>
+</div>

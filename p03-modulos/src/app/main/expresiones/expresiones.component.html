@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="card-header">
+    Expresiones
+  </div>
+  <div class="card-body">
+    <p class="card-text">Uso de expresiones</p>
+    <input type= "number" [(ngModel)]="sValor">
+  </div>
+  <div class="card-footer text-muted">
+    <!--expresiones, pueden ser op. matematicas, expresiones booleanas-->
+    <p>El nombre es {{sName.toUpperCase()}}</p>
+    <p>El valor es {{sValor}}</p>
+    <p>El doble del valor es {{sValor*2}}</p>
+    <p>{{sValor>20 ? sSaludo : "Valor inferior a 20"}}</p>
+  </div>
+</div>
